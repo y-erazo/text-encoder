@@ -8,7 +8,7 @@ const textoP = document.querySelector('.der>p');
 function btnEncriptar() {
     const textoEncriptado = encriptar(textoEntrada.value)
     
-    textoSalida.style.backgroundImage = 'url("./images/code.gif")';
+    textoSalida.style.backgroundImage = 'url("../images/code.gif")';
     
     setTimeout(() => {
         textoSalida.value = textoEncriptado;
@@ -22,7 +22,7 @@ function btnEncriptar() {
 function btnDesencriptar() {
     const textoEncriptado = desencriptar(textoEntrada.value)
     
-    textoSalida.style.backgroundImage = 'url("./images/code.gif")';
+    textoSalida.style.backgroundImage = 'url("../images/code.gif")';
     setTimeout(() => {
         textoSalida.value = textoEncriptado;
         textoSalida.style.backgroundImage = 'none';
@@ -67,7 +67,7 @@ function copiar() {
     textoP.style.display = 'inline';
     
     setTimeout(() => {
-        textoSalida.style.backgroundImage = 'url("./images/women-key.gif")';
+        textoSalida.style.backgroundImage = 'url("../images/women-key.gif")';
         tituloH2.style.display = 'inline';
         textoP.innerHTML = 'Ingresa el texto que desees encriptar o desencriptar.';
         btnCopiar.style.display = 'none'
