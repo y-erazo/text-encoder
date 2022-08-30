@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encriptador de texto realizado para el reto 1 de OracleOne - Alura">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="images/x-icon">
+    <link rel="apple-touch-icon" href="/custom_icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/script.js" defer></script>
+    
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img title="Logo Alura" src="./images/logo.png" alt="Logo Alura Latam">
+        <div class="toggle">
+            <div class="boton-cover">
+                <div class="boton r" id="boton">
+                    <input type="checkbox" class="checkbox" onchange='modoPantalla()'>
+                    <div class="control"></div>
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="izq">
+            <h1>Encriptapp</h1>
+            <textarea autocomplete="off" id="textoEntrada" cols="40" rows="6" placeholder="Ingresa tu texto aquí" spellcheck="false" onkeypress="return soloLetras(event)" onblur="limpia()" id="textoIngresado"></textarea>
+            <p class="advertencia"><span><i class="fa-solid fa-circle-exclamation"></i></span> Solo letras minúsculas y sin acentos</p>
+            <div class="botones">
+                <button type="button" class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button type="button" class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="der">
+            <textarea autocomplete="off" id="textoSalida" cols="18" rows="8" spellcheck="false" disabled></textarea>
+            <h2>Ningún mensaje fue encontrado</h2>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button type="button" class="botonCopiar" onclick="copiar()">Copiar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Yazmin Erazo | 2022</p>
+        <div class="icon-github">
+            <a title="github" type="image" href="https://github.com/y-erazo" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    
+</body>
+</html>

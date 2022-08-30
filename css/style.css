@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+body{
+    background: #EFF1FA;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    color: #3b3b3b;
+}
+
+header, footer{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+header{
+    justify-content: space-between;
+    background-color: #FFF;
+}
+
+h1{
+    font-size: 2em;
+    margin-bottom: 32px;
+    color: #0A3871;
+}
+
+main{
+    max-width: 1360px;
+    max-height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+section{
+    margin:20px;
+}
+
+button{
+    width: 210px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 5px;
+    border: 1px solid #0A3871;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #072B61;
+    color: #FFFFFF;
+}
+
+
+/* ------------------ Contenedor Izquierda ------------------ */
+
+#textoEntrada, #textoSalida{
+    width: 100%;
+    height: -webkit-fill-available;
+    resize: none;
+    border: none;
+    background: none;
+}
+#textoEntrada{
+    background-color: #E9ECF8;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#textoEntrada:focus{
+    outline: 1px solid #b6c0e9;
+    border-radius:10px ;
+}
+
+.izq p{
+    margin-top: 20px;
+}
+
+.izq > .botones{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.encriptar{
+    background-color: #072B61;
+    color: #FFFFFF;
+}
+.encriptar:hover{
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+.advertencia{
+    color: #495057;
+    font-size:12px;
+    text-align: center;
+}
+
+/* ------------------ Contenedor Derecha ------------------ */
+
+.der{
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#textoSalida{
+    background-image:url("/images/women-key.gif");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#textoSalida:focus{
+    outline: 0;
+}
+
+.der>h2{
+    font-size: 1.5rem;
+    margin-bottom:15px ;
+}
+.der>p{
+    margin-bottom:15px ;
+}
+
+.botonCopiar{
+    display: none;
+}
+
+/*----------   TOGGLE General ---------- */
+
+.boton{
+    position:relative;
+    width: 135px;
+    height: 34px;
+    overflow: hidden;
+    box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+    margin: 0 50px;
+}
+
+
+.boton.r, .boton.r .bg{
+    border-radius: 100px;
+}
+
+.boton.b2{
+    border-radius: 2px;
+}
+
+.checkbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.control{
+    z-index: 2;
+}
+
+.bg{
+    width: 135px;
+    background-color: #F9FAFE;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+
+/*----------   TOGGLE Claro ---------- */
+
+#boton .control:before{
+    content: '🌞 Claro';
+    position: absolute;
+    top: 2px;
+    right: 0;
+    bottom: 2;
+    left: 0;
+    width: 60px;
+    height: 30px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 15px;
+    background-color: #aebbf5;
+    border-radius: 15px;
+    transition: 0.3s ease all, left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+    box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+}
+
+
+/*----------  TOGGLE oscuro  ----------*/
+#boton .checkbox:checked + .control:before{
+    content: '🌜 Oscuro';
+    left: 42px;
+    background-color: #5061b8;
+}
+
+#boton .checkbox:checked ~ .bg{
+    background-color: #F9FAFE;
+}
+
+
+footer{
+    background-color:#072B61;
+    color: #FFFFFF; 
+    justify-content: right;
+    margin-top: auto;
+}
+footer p{
+    margin: 20px;
+}
+
+footer>div{
+    width: 50px;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.fa-github{
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.fa-github:hover{
+    border: 1px solid #EFF1FA;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+
+/*----------  CSS Modo Oscuro ----------*/
+
+.oscuro{
+    background:linear-gradient(360deg, #020c1f, #052051);
+    
+}
+
+.texto{
+    color:#FFFFFF
+}
+
+.boton-ppal{
+    background-color: #6969d1;
+}
+
+.boton-claro:hover{
+    background-color: #052051; /*#220643*/
+    border: 1px solid #FFFFFF;
+}
+
+
+/* **************************************** Laptop ****************************************/
+
+    @media screen and (min-width: 1024px) {
+        .advertencia{
+            text-align: left;
+        }
+    }
+
+/* **************************************** Mobile ****************************************/
+
+    @media screen and (max-width: 360px) {
+        footer{
+            justify-content: center;
+        }
+    }
