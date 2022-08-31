@@ -22,6 +22,5 @@
 # Enable syntax highlighting for files with `.gitattributes` extensions.
 #
 *.gitattributes linguist-language=gitattributes
-
-*.css linguist-detectable=true
+*.css linguist-detectable=false
 *.js linguist-detectable=true
