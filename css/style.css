@@ -228,17 +228,13 @@ button:hover{
 footer{
     background-color:#072B61;
     color: #FFFFFF; 
-    justify-content: right;
+    justify-content: center;
     margin-top: auto;
-}
-footer p{
-    margin: 20px;
 }
 
 footer>div{
     width: 50px;
     text-align: center;
-    margin-right: 50px;
 }
 
 .fa-github{
@@ -280,6 +276,12 @@ footer>div{
         .advertencia{
             text-align: left;
         }
+        footer{
+            justify-content: right;
+        }
+        footer>div{
+            margin-right: 50px;
+        }
     }
 
 /* **************************************** Mobile ****************************************/
@@ -288,4 +290,5 @@ footer>div{
         footer{
             justify-content: center;
         }
+        
     }
