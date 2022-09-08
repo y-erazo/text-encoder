@@ -6,7 +6,7 @@
 
 ![Diseño](https://user-images.githubusercontent.com/54871751/187555285-a8108d2a-67da-4d40-8eee-1ae50a941d18.png)
 
-## [Ver en vivo 🚀](https://y-erazo.github.io/text-encoder/)
+## [Ver en vivo 🚀](https://yazmin-erazo.github.io/text-encoder/)
 <br/>
 
 Las "llaves" de encriptación utilizadas son las siguientes:
@@ -26,7 +26,7 @@ Las "llaves" de encriptación utilizadas son las siguientes:
 <br/>
 
 ---
-Con ❤️ por [Yazmin-Erazo](https://github.com/y-erazo) 😊
+Con ❤️ por [Yazmin-Erazo](https://github.com/yazmin-erazo) 😊
 
 <br/>
 <br/>
