@@ -9,18 +9,8 @@
 ## [Ver en vivo 🚀](https://yazmin-erazo.github.io/Text-Encoder/)
 <br/>
 
-Las "llaves" de encriptación utilizadas son las siguientes:
-
-* La letra "e" es convertida para "enter"
-* La letra "i" es convertida para "imes"
-* La letra "a" es convertida para "ai"
-* La letra "o" es convertida para "ober"
-* La letra "u" es convertida para "ufat"
-
-## Características:
-* Funciona solo con letras minúsculas
-* No admite números ni caracteres especiales
-* Cambio de modo de pantalla oscuro - claro
+Challenge Oracle ONE<br/><br/>
+Desafío del programa de Alura Latam en el que debíamos cumplir con los requerimientos dados y trabajando con un archivo inicial en figma el cual adapte en diagramación y estilos para realizar las versiones en modo claro y oscuro.
 
 <br/>
 <br/>
